@@ -1,0 +1,43 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#container {
+    background-color:bisque;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+#side-bar {
+    background-color: aqua;
+}
+
+#main {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+}
+
+#header {
+    background-color: #e5e7eb;
+    grid-row: 1 / 2;
+}
+
+#contents {
+    background-color: lightgray;
+    grid-row: 2 / 10;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#projects {
+    grid-column: 1 / 3;
+    border: 2px solid;
+}
+
+#announcements {
+    grid-column: 3 / 4;
+    border: 2px solid;
+}
