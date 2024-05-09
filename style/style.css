@@ -1,18 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap');
+
 body {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
 }
 
 #container {
-    background-color:bisque;
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 2fr 8fr;
     width: 90%;
     height: 90%;
     margin: auto;
 }
 
 #side-bar {
-    background-color: aqua;
+    background-color: #2563eb;
+    color: white;
 }
 
 #main {
@@ -40,4 +44,59 @@ body {
 #announcements {
     grid-column: 3 / 4;
     border: 2px solid;
+}
+
+#side-bar {
+    display: grid;
+    grid-template-rows: 2fr 8fr 4fr 6fr;
+    gap: 5px;
+}
+
+.side-bar-nav-list, .side-bar-brand-list {
+    list-style: none;
+   /* border: solid red 1px; */
+}
+
+.side-bar-nav-list a:hover,  
+.side-bar-brand-list a:hover {
+    color: gray;
+}
+
+.side-bar-nav-list a, .side-bar-brand-list a {
+    display: inline-block;
+    text-decoration: none;
+   /* text-align: center; 
+   padding: 5px; */
+    color: white;
+    font-size: 0.8rem;
+    margin-left: 5px;
+    /* border: solid; */
+    margin: auto;
+    height: 50%;
+}
+
+.side-bar-img {
+    filter: invert(100%); /* this is to change image color from black to white */
+}
+
+#side-bar-head, 
+#side-bar-nav,
+#side-bar-brand {
+   /* border: solid; */
+}
+
+#side-bar-head {
+    grid-row: 1 / 2;
+    align-content: center;
+    padding-left: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#side-bar-nav {
+    grid-row: 2 / 3;
+}
+
+#side-bar-brand {
+    grid-row: 3 / 4;
 }
