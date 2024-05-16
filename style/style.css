@@ -19,33 +19,6 @@ body {
     color: white;
 }
 
-#main {
-    display: grid;
-    grid-template-rows: 1fr 9fr;
-}
-
-#header {
-    background-color: #e5e7eb;
-    grid-row: 1 / 2;
-}
-
-#contents {
-    background-color: lightgray;
-    grid-row: 2 / 10;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-#projects {
-    grid-column: 1 / 3;
-    border: 2px solid;
-}
-
-#announcements {
-    grid-column: 3 / 4;
-    border: 2px solid;
-}
-
 #side-bar {
     display: grid;
     grid-template-rows: 2fr 8fr 4fr 6fr;
@@ -65,8 +38,6 @@ body {
 .side-bar-nav-list a, .side-bar-brand-list a {
     display: inline-block;
     text-decoration: none;
-   /* text-align: center; 
-   padding: 5px; */
     color: white;
     font-size: 0.8rem;
     margin-left: 5px;
@@ -99,4 +70,96 @@ body {
 
 #side-bar-brand {
     grid-row: 3 / 4;
+}
+
+#main {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+#header {
+    background-color: #e5e7eb;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    gap: 3px;
+    border: solid red 1px;
+}
+
+#upper-header {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 1.5fr;
+    gap: 20px;
+    align-items: center;
+    border: solid green 2px;
+}
+
+#search {
+    grid-column: 1 / 2;
+    margin-left: 30px;
+    gap: 10px;
+}
+
+#upper-header-bell {
+    align-content: end;
+}
+
+#upper-header-self {
+    display: flex;
+    align-items: center;
+}
+
+#lower-header {
+    grid-row: 2 / 3;
+    border: solid green 2px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 5px;
+    margin: 10px;
+}
+
+#lower-header-self {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    border: solid brown 2px;
+    align-items: center;
+}
+
+#lower-header-list {
+    grid-column: 2 / 3;
+    border: solid brown 2px;
+}
+
+#lower-header-list ul {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    justify-content: space-around;
+}
+
+#lower-header-list a {
+    text-decoration: none;
+    color: white;
+    background-color: #2563eb;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+#contents {
+    background-color: lightgray;
+    grid-row: 2 / 7;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#projects {
+    grid-column: 1 / 3;
+    border: 2px solid;
+}
+
+#announcements {
+    grid-column: 3 / 4;
+    border: 2px solid;
 }

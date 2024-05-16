@@ -11,3 +11,7 @@ Version 2
 - Manage side bar navigation list
 - Manage side bar brand list
 
+Version 3
+- Import icons for header
+- Set up upper part of header, such search input, bell and site images
+- Set up lower part of header, site image, greeting and link buttons
