@@ -15,3 +15,7 @@ Version 3
 - Import icons for header
 - Set up upper part of header, such search input, bell and site images
 - Set up lower part of header, site image, greeting and link buttons
+
+Version 4
+- Layout project section
+- Layout project cards - side deccreation column and all contents
