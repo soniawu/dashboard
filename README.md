@@ -19,3 +19,7 @@ Version 3
 Version 4
 - Layout project section
 - Layout project cards - side deccreation column and all contents
+
+Version 5
+- Layout annoucement section
+- Layout trending section
