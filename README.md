@@ -23,3 +23,9 @@ Version 4
 Version 5
 - Layout annoucement section
 - Layout trending section
+
+Version 6
+- Added spaces between icon and text in sidebar list
+- Styling search box
+- Set header font sizes and weights
+- Adjust spaces between units

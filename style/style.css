@@ -12,7 +12,7 @@ body {
     width: 90%;
     /*height: 90%; */
     margin: auto;
-    border: solid black 3px;
+    /* border: solid black 3px; */
 }
 
 #side-bar {
@@ -43,8 +43,8 @@ body {
     color: white;
     font-size: 0.8rem;
     margin-left: 5px;
-    /* border: solid; */
-    margin: auto;
+    /* border: solid; 
+    margin: auto; */
     height: 50%;
 }
 
@@ -76,62 +76,85 @@ body {
 
 #main {
     display: grid;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 8fr;
 }
 
 #header {
     background-color: #e5e7eb;
     /* grid-row: 1 / 2; */
     display: grid;
-    grid-template-rows: 1fr 2fr;
-    gap: 3px;
-    border: solid red 1px;
+    grid-template-rows: 1fr 1.5fr;
+    /* gap: 3px; */
+    /* border: solid red 1px; */
 }
 
 #upper-header {
     grid-row: 1 / 2;
     display: grid;
-    grid-template-columns: 2fr 0.5fr 1.5fr;
-    gap: 20px;
+    grid-template-columns: 3.5fr 1fr 1.5fr;
+    /*gap: 20px; */
     align-items: center;
-    border: solid green 2px;
+    margin-top: 5px;
+    /* border: solid green 2px; */
 }
 
 #search {
     grid-column: 1 / 2;
     margin-left: 30px;
-    gap: 10px;
+    /* gap: 10px; */
+}
+
+#search-box {
+    background-color: #cbd5e1;
+    border: 1.5px; 
+    border-radius: 15px;
+    border-style: outset;
 }
 
 #upper-header-bell {
-    align-content: end;
+    align-content: center;
 }
 
 #upper-header-self {
     display: flex;
     align-items: center;
+    font-size: 0.8em;
+    font-weight: bold;
 }
 
 #lower-header {
     grid-row: 2 / 3;
-    border: solid green 2px;
+    /* border: solid green 2px; */
     display: grid;
     grid-template-columns: 3fr 2fr;
-    gap: 5px;
-    margin: 10px;
+    /* gap: 5px; */
+    margin-left: 10px;
 }
 
 #lower-header-self {
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: 1fr 6fr;
-    border: solid brown 2px;
+    /* border: solid brown 2px; */
     align-items: center;
+    line-height: 0.5em;
+}
+
+#greeting-1 {
+    font-size: 0.5em;
+    font-weight: bold;
+}
+
+#greeting-2 {
+    font-size: 1.0em;
+    font-weight: bold;
 }
 
 #lower-header-list {
     grid-column: 2 / 3;
-    border: solid brown 2px;
+    /* border: solid brown 2px; */
+    font-size: 0.6em;
+    align-self: center;
 }
 
 #lower-header-list ul {
@@ -146,11 +169,11 @@ body {
     color: white;
     background-color: #2563eb;
     padding: 5px 20px;
-    border-radius: 20px;
+    border-radius: 20px; 
 }
 
 #contents {
-    background-color: lightgray;
+    background-color: #cbd5e1;
     grid-row: 2 / 7;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
