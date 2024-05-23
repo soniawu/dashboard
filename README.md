@@ -29,3 +29,8 @@ Version 6
 - Styling search box
 - Set header font sizes and weights
 - Adjust spaces between units
+
+Version 7
+- Change sidebar grid layout
+- Add more details to project section layout
+- Manage announcement layout
