@@ -34,3 +34,6 @@ Version 7
 - Change sidebar grid layout
 - Add more details to project section layout
 - Manage announcement layout
+
+Version 8
+- Layout trending section, trying grig-area

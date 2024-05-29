@@ -289,3 +289,36 @@ body {
     font-weight: normal;
     opacity: 0.6;
 }
+
+.trending-list-icon {
+    grid-area: theIcon;
+    border: solid red 2px;
+    align-self: center;
+}
+
+.trending-list-at {
+    grid-area: theAt;
+    font-size: 0.7em;
+    opacity: 1.0;
+    font-weight: bold;
+    border: solid red 2px;
+}
+
+.trending-list-name {
+    grid-area: theName;
+    font-size: 0.8em;
+    font-weight: normal;
+    opacity: 0.6;
+    border: solid red 2px;
+    align-content: flex-start;
+}
+
+.trending-list {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "theIcon theAt"
+        "theIcon theName";
+}
+
