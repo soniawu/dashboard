@@ -10,9 +10,7 @@ body {
     display: grid;
     grid-template-columns: 2fr 8fr;
     width: 90%;
-    /*height: 90%; */
     margin: auto;
-    /* border: solid black 3px; */
 }
 
 #side-bar {
@@ -20,7 +18,6 @@ body {
     color: white;
     grid-column: 1 / 2;
     display: grid;
-    /* grid-template-rows: 1fr 4fr 2fr; */
     grid-template-rows: repeat(auto-fit, minmax(1em, 1.5em));
     gap: 5px;
 }
@@ -30,7 +27,6 @@ body {
 .announcement-list,
 .trending-list {
     list-style: none;
-   /* border: solid red 1px; */
 }
 
 .side-bar-nav-list a:hover,  
@@ -44,19 +40,10 @@ body {
     color: white;
     font-size: 0.8rem;
     margin-left: 5px;
-    /* border: solid; 
-    margin: auto; */
-   /* height: 50%; */
 }
 
 .side-bar-img {
     filter: invert(100%); /* this is to change image color from black to white */
-}
-
-#side-bar-head, 
-#side-bar-nav,
-#side-bar-brand {
-   /* border: solid; */
 }
 
 #side-bar-head {
@@ -77,32 +64,26 @@ body {
 
 #main {
     display: grid;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 150px auto;
 }
 
 #header {
     background-color: #e5e7eb;
-    /* grid-row: 1 / 2; */
     display: grid;
     grid-template-rows: 1fr 1.5fr;
-    /* gap: 3px; */
-    /* border: solid red 1px; */
 }
 
 #upper-header {
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 3.5fr 1fr 1.5fr;
-    /*gap: 20px; */
     align-items: center;
     margin-top: 5px;
-    /* border: solid green 2px; */
 }
 
 #search {
     grid-column: 1 / 2;
     margin-left: 30px;
-    /* gap: 10px; */
 }
 
 #search-box {
@@ -125,10 +106,8 @@ body {
 
 #lower-header {
     grid-row: 2 / 3;
-    /* border: solid green 2px; */
     display: grid;
     grid-template-columns: 3fr 2fr;
-    /* gap: 5px; */
     margin-left: 10px;
 }
 
@@ -136,7 +115,6 @@ body {
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: 1fr 6fr;
-    /* border: solid brown 2px; */
     align-items: center;
     line-height: 0.5em;
 }
@@ -153,7 +131,6 @@ body {
 
 #lower-header-list {
     grid-column: 2 / 3;
-    /* border: solid brown 2px; */
     font-size: 0.6em;
     align-self: center;
 }
@@ -175,7 +152,6 @@ body {
 
 #contents {
     background-color: #cbd5e1;
-    /* grid-row: 2 / 7; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -183,9 +159,8 @@ body {
 #projects {
     padding: 15px;
     grid-column: 1 / 3;
-    /* border: 2px solid; */
     display: grid;
-    grid-template-rows: 1fr 12fr;
+    grid-template-rows: 50px auto;
 }
 
 #project-head {
@@ -195,7 +170,6 @@ body {
 }
 
 #project-cards {
-    /* grid-row: 2 / 3; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px; 
@@ -205,39 +179,29 @@ body {
     background-color: white;
     display: grid;
     grid-template-columns: 0.2fr 9.8fr;
-    /*gap: 10px; */
     border-radius: 10px;
     overflow: hidden; /* this will hide the non-radius overflow from .card-side-dec */
     height: 300px; 
-   /* border: solid purple 2px; */
 }
 
 .card-side-dec {
     background-color: orange;
-    /* grid-column: 1 / 2; */
-    /*border: solid black 2px; */
 }
 
 .card-main {
     margin: 20px;
-    /*grid-column: 2 / 3; */
-    /*display: grid;
-    grid-template-rows: 1fr 3fr 1fr; */
     line-height: 0.8em;
     overflow: scroll;
-    /*border: solid black 2px; */
 }
 
 .card-title {
     grid-row: 1 / 2;
     font-size: 0.8em;
     font-weight: bold;
-    /*border: solid black 2px; */
 }
 
 .card-details {
     grid-row: 2 / 3;
-    /* border: solid black 2px; */
 }
 
 .card-icons {
@@ -245,7 +209,6 @@ body {
     padding: 10px;
     grid-row: 3 / 4;
     text-align: end;
-    /*border: solid black 2px; */
 }
 
 .card-icons a {
@@ -253,8 +216,7 @@ body {
 }
 
 #announcements-and-trending {
-    /* grid-column: 3 / 4; */
-    /* border: 2px solid; */
+    padding: 5px;
     display: grid;
     grid-template-rows: repeat(2,1fr);
 }
@@ -292,8 +254,7 @@ body {
 
 .trending-list-icon {
     grid-area: theIcon;
-    /*border: solid red 2px; */
-    align-self: center;
+    align-self: center; 
 }
 
 .trending-list-at {
@@ -301,22 +262,21 @@ body {
     font-size: 0.7em;
     opacity: 1.0;
     font-weight: bold;
-    /*border: solid red 2px; */
+    align-self: last baseline;
 }
 
 .trending-list-name {
     grid-area: theName;
     font-size: 0.8em;
     font-weight: normal;
-    opacity: 0.6;
-    /*border: solid red 2px; */
-    align-content: flex-start;
+    opacity: 0.6; 
+    align-self: self-start;
 }
 
 .trending-list {
     display: grid;
     grid-template-columns: 2fr 8fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
     grid-template-areas: 
         "theIcon theAt"
         "theIcon theName";

@@ -37,3 +37,8 @@ Version 7
 
 Version 8
 - Layout trending section, trying grig-area
+
+Version 9
+- Change to more flexible grid layout
+- Add real project descption and announcement
+- Remove unwanted lines
